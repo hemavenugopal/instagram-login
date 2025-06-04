@@ -17,9 +17,7 @@ const Login = () => {
   userName,
   password
 });
-        // const loginDetails = await axios.post("http://localhost:5000/login", {
-        //     userName,password
-        // })
+        
         if(loginDetails.data.success){
             navigate("/home")
 
