@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import axios from "axios"
 import { useNavigate } from 'react-router-dom'
@@ -37,9 +36,9 @@ const Login = () => {
     <div className='flex flex-col justify-center items-center min-h-screen bg-gray-200' >
     <form onSubmit={handleLogin} className='bg-white p-8 rounded w-full max-w-sm '>
         <h2 className='text-3xl font-bold text-center mb-6'>Instagram</h2>
-        <input className='w-full p-2 border border-gray-300 rounded mb-4' value={userName} type='text' placeholder='Username' autocomplete="username" required
+        <input className='w-full p-2 border border-gray-300 rounded mb-4' value={userName} type='text' placeholder='Username'  required
         onChange={(e) => setUserName(e.target.value)} />
-        <input className='w-full p-2 border border-gray-300 rounded mb-4' value={password} type='password' placeholder='password' autocomplete="current-password" required
+        <input className='w-full p-2 border border-gray-300 rounded mb-4' value={password} type='password' placeholder='password'  required
         onChange={(e) => setPassword(e.target.value)}/>
         <button className='w-full bg-blue-400 text-white p-2 rounded hover:bg-blue-600'>Log In</button>
         <h2 className='mt-5'>OR</h2>
