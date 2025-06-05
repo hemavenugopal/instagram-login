@@ -13,7 +13,7 @@ const Login = () => {
     try{
         e.preventDefault();
 
-        const loginDetails = await axios.post("http://localhost:5000/login", {
+        const loginDetails = await axios.post("https://instagram-login-ctsh.onrender.com", {
   userName,
   password
 });
